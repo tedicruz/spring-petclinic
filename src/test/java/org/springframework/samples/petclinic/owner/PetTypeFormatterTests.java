@@ -51,7 +51,7 @@ public class PetTypeFormatterTests {
     @Test(expected = ParseException.class)
     public void shouldThrowParseException() throws ParseException {
         Mockito.when(this.pets.findPetTypes()).thenReturn(makePetTypes());
-        petTypeFormatter.parse("Fish", Locale.ENGLISH);
+        petTypeFormatter.parse("ish", Locale.ENGLISH);
     }
 
     /**
